@@ -71,11 +71,18 @@ body {
   border: 0px solid transparent;
   transition: all 0.3s ease-in;
 }
+
+
 .btn-style:hover{
   opacity: 0.8;
   box-shadow: 0px 0px 17px #eeeef065;
 }
-
+.btn-style-border{
+  background: transparent;
+  border: solid 1px var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 0;
+} 
 .input-group{
   position: relative;
   background: red;
@@ -244,6 +251,141 @@ border-radius: 0.5rem;
 .our-services-leftside-content{
   padding-left: 5rem;
 }
+
+/* SERVICE SECTION */
+
+.service-main-container{
+  margin-top: 5rem;
+  padding: 5rem 0;
+  background: rgb(251, 234, 249);
+}
+
+
+.service-main-container .main-heading{
+  margin: 3rem;
+}
+
+.work-container-sub-div{
+
+  /* box-shadow: 3px 3px 7px rgba(0,0,0,0.2); */
+  
+  
+  
+}
+.work-container-sub-div .card{
+  background: transparent;
+  border: solid 1px rgb(252, 217, 248);
+  background: rgba(252, 217, 248, 0.23);
+  transition: all 0.3s ease-in;
+}
+
+
+.card:hover{
+  background: var(--bgcolor);
+  cursor: pointer;
+
+}
+.logo{
+  transition: all 0.3s ease-in;
+}
+
+.card:hover .logo{
+  background: #fff;
+}
+
+.work-container-sub-div p{
+  padding: 0 2rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: grey;
+  text-align: justify;
+}
+
+
+/* CONTACT US SECTION */
+
+.contact-us-section{
+
+  background: transparent;
+
+}
+
+
+.contact-us-section .contact-right-side{
+
+  position: relative;
+}
+
+.contact-us-section .contact-right-side form input::placeholder, textarea::placeholder{
+
+ color: grey;
+ font-style: italic;
+ font-size: 1.2rem;
+  
+}
+
+/* FOOTER SECTION */
+
+
+.footer-section{
+  background: rgb(6, 13, 39);
+  color: rgb(233, 231, 231);
+
+}
+
+
+
+.footer-section .social-icon{
+  display: grid;
+  font-size: 2rem;
+  background: rgba(249, 251, 251, 0.114);
+  width:40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 3px;
+  /* box-shadow: 3px 3px 6px #ffffff32; */
+  transition: all 0.3s ease-in;
+}
+
+.footer-section .social-icon:hover{
+  color: #6f5de7;
+
+  animation: rotatefont 1s linear infinite alternate-reverse;
+}
+
+@keyframes rotatefont{
+  0%{
+    transform: scale(0.6);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+
+.footer-section h2{
+  color: lightgray;
+}
+
+.footer-section ul{
+list-style: none;
+font-size: 1.2rem;
+}
+
+.footer-section ul li{
+  margin: 1rem 0;
+}
+
+.footer-section ul li a{
+  color: #fff;
+  transition: all 0.3s ease-in;
+
+}
+
+.footer-section ul li a:hover{
+  color: #6f5de7;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
