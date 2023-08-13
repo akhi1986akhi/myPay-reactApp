@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from "react";
+
+import { NavLink } from 'react-router-dom';
 export default function Navbar() {
 
     const [show, setShow] = useState(false);
@@ -35,24 +37,24 @@ export default function Navbar() {
                         >
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class={`collapse navbar-collapse ${show ? "show" : ""}`}>
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page">Home</a>
+                        <div className={`collapse navbar-collapse ${show ? "show" : ""}`}>
+                            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link">Services</a>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/service">Services</NavLink>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link">About</a>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/about">About</NavLink>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link">Contact</a>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/contact">Contact</NavLink>
                                 </li>
-                                <form class="d-flex" role="search">
-                                    <button class="btn-style  me-2" type="submit">signUp</button>
+                                <form className="d-flex" role="search">
+                                    <button className="btn-style  me-2" type="submit">signUp</button>
 
-                                    <button class="btn-style" type="submit">signIn</button>
+                                    <button className="btn-style" type="submit">signIn</button>
 
                                 </form>
 

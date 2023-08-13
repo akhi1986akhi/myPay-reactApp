@@ -1,24 +1,24 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Navbar';
-import Header from './Header';
-import HowItWorks from './HowItWorks';
-import AboutUs from './AboutUs';
-import Services from './Services';
-import Contact from './Contact';
-import Footer from './Footer';
+import Home from './Home';
+
+import { Routes ,Route} from 'react-router';
+import About from './pages/About';
+import Service from './pages/Service';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-   <>
-    <Navbar/>
-    <Header/>
-    <HowItWorks/>
-    <AboutUs/>
-    <Services/>
-    <Contact/>
-    <Footer/>
-   </>
+    <>
+      <Routes>
+
+        <Route path="/" Component={Home}></Route>
+        <Route exact path="/about" Component={About}></Route>
+        <Route path="/service" Component={Service}></Route>
+        <Route path="/contact" Component={Contact}></Route>
+        <Route path="/error" Component={Error}></Route>
+      </Routes>
+    </>
   );
 }
 
