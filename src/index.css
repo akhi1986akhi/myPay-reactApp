@@ -386,6 +386,56 @@ font-size: 1.2rem;
   color: #6f5de7;
 }
 
+
+/* 404 */
+
+
+.container-error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+ 
+  gap:20px;
+  
+}
+
+.container-error h2{
+  color: slateblue;
+  font-size: 1rem;
+
+}
+
+.container-error img{
+  position: relative;
+  background: transparent;
+  width:30%;
+}
+.container-error button{
+  outline: none;
+  border: 1px solid transparent;
+  background: #6f5de7;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.container-error button:hover{
+  background: transparent;
+  border: solid 1px slateblue;
+  color: slateblue;
+
+}
+
+
+.container-error button:hover .back-btn{
+  color: #6f5de7;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

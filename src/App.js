@@ -6,6 +6,9 @@ import { Routes ,Route} from 'react-router';
 import About from './pages/About';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
+import Error404 from './Error404';
+
+
 
 function App() {
   return (
@@ -16,7 +19,7 @@ function App() {
         <Route exact path="/about" Component={About}></Route>
         <Route path="/service" Component={Service}></Route>
         <Route path="/contact" Component={Contact}></Route>
-        <Route path="/error" Component={Error}></Route>
+        <Route path="*" Component={Error404}></Route>
       </Routes>
     </>
   );
