@@ -7,7 +7,8 @@ export default function Error() {
     <div className="container-error">
 
         <img src={img01} alt="" />
-        <h2>Page Not Found</h2>
+        <h2>we are Sorry!, Page Not Found</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio veniam placeat quae exercitationem quis ullam!</p>
         <button >
 
           <NavLink to="/" className="back-btn">
